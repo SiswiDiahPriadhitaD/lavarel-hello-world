@@ -19,7 +19,7 @@ use App\Http\Controllers\Praktikum3\NewsController as NewsController;
 |
 */
 
-//PRAKTIKUM 1
+//PRAKTIKUM 3
 
 Route::get('/Home', function () {
   return view('Home');
@@ -56,3 +56,6 @@ Route::get('/Home', function () {
 // Route::get('/', [UtamaController::class,'index']);
 // Route::get('/about', [AboutUsController::class,'about']);
 // Route::get('/news/{id}', [NewsController::class,'news']);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
