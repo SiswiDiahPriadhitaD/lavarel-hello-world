@@ -21,9 +21,6 @@ use App\Http\Controllers\Praktikum3\NewsController as NewsController;
 
 //PRAKTIKUM 3
 
-Route::get('/Home', function () {
-  return view('Home');
-});
 
 
 //nomer 1
