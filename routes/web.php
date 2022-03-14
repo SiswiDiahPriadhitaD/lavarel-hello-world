@@ -7,6 +7,8 @@ use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\Praktikum3\HomeController as UtamaController; 
 use App\Http\Controllers\Praktikum3\AboutUsController as AboutUsController;
 use App\Http\Controllers\Praktikum3\NewsController as NewsController;
+use App\Http\Controllers\PostController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -21,9 +23,9 @@ use App\Http\Controllers\Praktikum3\NewsController as NewsController;
 
 //PRAKTIKUM 3
 
-Route::get('/Home', function () {
-  return view('Home');
-});
+//Route::get('/Home', function () {
+//  return view('Home');
+//});
 
 
 //nomer 1
@@ -59,3 +61,6 @@ Route::get('/Home', function () {
 //Auth::routes();
 
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/Home', [PostController::class, 'index']);
+
