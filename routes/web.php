@@ -58,9 +58,10 @@ use App\Http\Controllers\PostController;
 // Route::get('/', [UtamaController::class,'index']);
 // Route::get('/about', [AboutUsController::class,'about']);
 // Route::get('/news/{id}', [NewsController::class,'news']);
-//Auth::routes();
+Auth::routes();
 
-//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/Home', [PostController::class, 'index']);
+
+//Route::get('/Home', [PostController::class, 'index']);
 
