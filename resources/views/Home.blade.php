@@ -43,7 +43,7 @@
 </body>
 </html> -->
 
-@extends('masterLayout')
+@extends('indexLayout')
 
 @section('content')
 
